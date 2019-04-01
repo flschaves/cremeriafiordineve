@@ -1,0 +1,38 @@
+.footer {
+    padding: 30px 30px 60px;
+    text-align: center;
+    p {
+        color: $white;
+        margin: 0;
+    }
+    @media (max-width: 767px) {
+        .col:not(:last-child),
+        .col-auto:not(:last-child) {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba( 255, 255, 255, 0.3 );
+        }
+    }
+}
+.footer-title {
+    font-family: 'Asheron';
+    font-size: 18px;
+    color: $white;
+    line-height: 18px;
+    letter-spacing: 2px;
+    &::after {
+        content: '';
+
+        -webkit-mask: url('../svg/logo.svg') no-repeat 50% 50%;
+        mask: url('../svg/logo.svg') no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+
+        background-color: $white;
+        fill: $white;
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin: 20px auto 25px;
+    }
+}

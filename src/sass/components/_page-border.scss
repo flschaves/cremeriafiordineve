@@ -1,0 +1,84 @@
+.page-border-x,
+.page-border-y {
+    &::after,
+    &::before {
+        content: "";
+        background-color: $white;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+    }
+    &.purple {
+        &::after,
+        &::before {
+            background-color: $purple;
+        }
+    }
+    &.l-1 {
+        &::after,
+        &::before {
+            z-index: 10;
+        }
+    }
+    &.y-100 {
+        &::after,
+        &::before {
+            height: 100%;
+            top: 0;
+        }
+    }
+}
+.page-border-x {
+    &::after,
+    &::before {
+        width: calc( 100% - 60px );
+        height: 1px;
+        left: 30px;
+    }
+    &::after {
+        top: 30px;
+    }
+    &::before {
+        bottom: 30px;
+    }
+    @media (max-width: 767px) {
+        &::after,
+        &::before {
+            width: calc( 100% - 30px );
+            left: 15px;
+        }
+        &::after {
+            top: 15px;
+        }
+        &::before {
+            bottom: 15px;
+        }
+    }
+}
+.page-border-y {
+    &::after,
+    &::before {
+        width: 1px;
+        height: calc( 100% - 60px );
+        top: 30px;
+    }
+    &::after {
+        left: 30px;
+    }
+    &::before {
+        right: 30px;
+    }
+    @media (max-width: 767px) {
+        &::after,
+        &::before {
+            height: calc( 100% - 30px );
+            top: 15px;
+        }
+        &::after {
+            left: 15px;
+        }
+        &::before {
+            right: 15px;
+        }
+    }
+}

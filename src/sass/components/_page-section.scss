@@ -1,0 +1,44 @@
+.page-section {
+    min-height: 100vh;
+    position: relative;
+    padding: 60px;
+    overflow: hidden;
+    &.about {
+        background-color: $white;
+    }
+    &.our-flavors {
+        background-color: $white;
+        color: $purple;
+    }
+    &.picture {
+        font-size: 0;
+        padding: 0;
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 100%;
+            transition: transform 15s;
+        }
+        &.active-section {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 30px 30px 60px;
+        &.picture {
+            min-height: 0;
+            img {
+                position: static;
+            }
+            .next-section {
+                display: none;
+            }
+        }
+    }
+}

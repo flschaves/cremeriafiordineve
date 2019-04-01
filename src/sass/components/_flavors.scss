@@ -1,0 +1,17 @@
+.flavor {
+    margin-bottom: 30px;
+    .flavor-type {
+        font-family: "Asheron";
+        font-size: 24px;
+    }
+    .flavor-list {
+        li {
+            margin-bottom: 5px;
+        }
+    }
+    @media (max-width: 767px) {
+        .flavor-list {
+            padding-left: 25px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.next-section {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+    font-size: 40px;
+    &.purple {
+        color: $purple;
+    }
+    @media (max-width: 767px) {
+        bottom: 5px;
+    }
+}

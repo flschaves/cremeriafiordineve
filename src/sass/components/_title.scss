@@ -1,0 +1,51 @@
+.section-title {
+    font-family: 'Asheron';
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    &::after,
+    &::before {
+        content: '';
+
+        -webkit-mask: url('../svg/logo.svg') no-repeat 50% 50%;
+        mask: url('../svg/logo.svg') no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+
+        background-color: $white;
+        display: inline-block;
+        margin: 0 15px;
+        width: 20px;
+        height: 20px;
+        fill: $white;
+
+        position: relative;
+        top: -4px;
+    }
+    &.purple {
+        color: $purple;
+        &::after,
+        &::before {
+            background-color: $purple;
+            fill: $purple;
+        }
+    }
+    @media (max-width: 767px) {
+        font-size: 30px;
+        letter-spacing: 1px;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: block;
+            margin: 15px auto;
+        }
+    }
+}
