@@ -544,6 +544,11 @@ h6 {
   margin: 15px;
 }
 
+/* line 8, src/sass/components/_harmful-agents.scss */
+.harmful-agents li img {
+  max-width: 100px;
+}
+
 /* line 1, src/sass/components/_header.scss */
 .header {
   background-image: url("../images/gelato-italiano-frutas-vermelhas.jpg");
@@ -657,16 +662,17 @@ h6 {
   /* line 1, src/sass/components/_page-section.scss */
   .page-section {
     padding: 30px 30px 60px;
+    min-height: 90vh;
   }
-  /* line 34, src/sass/components/_page-section.scss */
+  /* line 35, src/sass/components/_page-section.scss */
   .page-section.picture {
     min-height: 0;
   }
-  /* line 36, src/sass/components/_page-section.scss */
+  /* line 37, src/sass/components/_page-section.scss */
   .page-section.picture img {
     position: static;
   }
-  /* line 39, src/sass/components/_page-section.scss */
+  /* line 40, src/sass/components/_page-section.scss */
   .page-section.picture .next-section {
     display: none;
   }
