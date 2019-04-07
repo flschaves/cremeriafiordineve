@@ -31,6 +31,7 @@
     }
     @media (max-width: 767px) {
         padding: 30px 30px 60px;
+        min-height: 90vh;
         &.picture {
             min-height: 0;
             img {
