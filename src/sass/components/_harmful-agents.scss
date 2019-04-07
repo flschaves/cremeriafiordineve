@@ -5,5 +5,8 @@
     li {
         display: inline-block;
         margin: 15px;
+        img {
+            max-width: 100px;
+        }
     }
 }
